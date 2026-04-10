@@ -68,6 +68,7 @@ header {
     text-align: start;
     padding-left: 15vh;
     position: relative;
+    overflow-y: hidden;
 }
 
 .background-hero {
@@ -136,10 +137,6 @@ header {
     height: 100%;
     object-fit: cover;
     z-index: 1;
-}
-
-.block2 {
-    overflow-y: hidden;
 }
 
 .block2 .header-title,

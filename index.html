@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Apollo II</title>
+        <title>Apollo 11</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
@@ -11,30 +11,80 @@
     </head>
     <body>
         <header>
-            <nav class="nav-bar">
-                <a class="logo" href="https://olehwebdevelop.github.io/Landing-Page/">APOLLO II</a>
+            <nav class="nav-bar" id="nav">
+                <a class="logo" href="https://olehwebdevelop.github.io/Landing-Page/">APOLLO 11</a>
                 <div class="nav-items">
-                    <a class="nav-item" href="#Info">Info</a>
-                    <a class="nav-item" href="#About">About</a>
-                    <a class="nav-item"></a>
-                    <a class="nav-item"></a>
-                    <a class="nav-item"></a>
+                    <a class="nav-item" href="#Info">INFO</a>
+                    <a class="nav-item" href="#About">ABOUT</a>
+                    <a class="nav-item" href="#Mission">MISSION</a>
+                </div>
+                <div class="center-nav">
+                    <input class="search" id="search-input" type="text" placeholder="Search...">
+                    <button id="search-btn" class="search-btn">Search</button>
+                </div>
+                <div class="time">
+                    <button class="time-btn" id="time-btn"><span>Mission Timeline</span><span class="arrow-time">▼</span></button>
                 </div>
             </nav>
+                <ul class="time-list">
+                    <li>July 16 – Launch from Earth  </li>
+                    <li>July 19 – Enter lunar orbit</li>
+                    <li>July 20 – Moon landing</li>
+                    <li>July 24 – Return to Earth</li>
+                </ul>
+            <div class="search-results" id="search-results"></div>
             <div class="block1 block" id="Info">
                 <h1 class="header-title">Apollo 11: The First Step on the Moon</h1>
                 <p class="header-text">In 1969, humanity achieved one of its greatest milestones — landing on the Moon. This mission changed history and proved that impossible goals can become reality.
                  Explore the journey, the crew, and the legacy of Apollo 11.</p>
-                 <button class="block-btn"><span>EXPLORE</span><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9893 5.58371L12.2471 5.89914L11.9893 6.21555L8.10059 10.9782L7.3252 10.3454L10.5479 6.39914L1.39941 6.39914L1.39941 5.39914L10.5479 5.39914L7.3252 1.45383L8.10059 0.821014L11.9893 5.58371Z" fill="#F0F0FA" fill-opacity="0.8"></path></svg></button>
+                 <a href="https://www.nasa.gov/mission/apollo-11/" class="block-btn"><span>EXPLORE</span><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9893 5.58371L12.2471 5.89914L11.9893 6.21555L8.10059 10.9782L7.3252 10.3454L10.5479 6.39914L1.39941 6.39914L1.39941 5.39914L10.5479 5.39914L7.3252 1.45383L8.10059 0.821014L11.9893 5.58371Z" fill="#F0F0FA" fill-opacity="0.8"></path></svg></a>
                 <img class="background-hero" src="hero-img.jpg">
             </div>
             <div class="block2 block" id="About">
                 <h1 class="header-title">About the Mission</h1>
                 <p class="header-text">Apollo 11 was the first space mission that successfully landed humans on the Moon. It was led by NASA and launched on July 16, 1969.</p>
                 <p class="header-text">After traveling over 380,000 kilometers through space, the spacecraft reached lunar orbit and prepared for landing. This mission marked a defining moment in science, technology, and human exploration.</p>
-                 <button class="block-btn"><span>EXPLORE</span><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9893 5.58371L12.2471 5.89914L11.9893 6.21555L8.10059 10.9782L7.3252 10.3454L10.5479 6.39914L1.39941 6.39914L1.39941 5.39914L10.5479 5.39914L7.3252 1.45383L8.10059 0.821014L11.9893 5.58371Z" fill="#F0F0FA" fill-opacity="0.8"></path></svg></button>
+                 <a href="https://www.nasa.gov/mission/apollo-11/" class="block-btn"><span>EXPLORE</span><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9893 5.58371L12.2471 5.89914L11.9893 6.21555L8.10059 10.9782L7.3252 10.3454L10.5479 6.39914L1.39941 6.39914L1.39941 5.39914L10.5479 5.39914L7.3252 1.45383L8.10059 0.821014L11.9893 5.58371Z" fill="#F0F0FA" fill-opacity="0.8"></path></svg></a>
                 <img class="background-about" src="about-img.jpg">
             </div>
         </header>
+        <main>
+            <div class="main-items" id="Mission">
+                <div class="main-item">
+                    <span class="title-main">The Crew</span>
+                    <img class="main-img" src="crew-img.jpg">
+                    <span class="text-main">The mission was carried out by three astronauts:</span>
+                    <div class="crew-list">
+                        <span>• Neil Armstrong – Commander</span>
+                        <span>• Buzz Aldrin – Lunar Module Pilot</span>
+                        <span>• Michael Collins – Command Module Pilot</span>
+                    </div>
+                    <span class="text-main">Neil Armstrong became the first human to step onto the Moon, followed by Buzz Aldrin, while Michael Collins remained in orbit.</span>
+                </div>
+                <div class="main-item">
+                    <span class="title-main">The Historic Landing</span>
+                    <img class="main-img" src="landing-img.jpg">
+                    <span class="text-main">On July 20, 1969, the lunar module Eagle landed on the Moon’s surface.</span>
+                    <span class="text-main">Neil Armstrong stepped outside and said the famous words:</span>
+                    <span class="text-main">“One small step for man, one giant leap for mankind.”</span>
+                    <span class="text-main">This moment was watched by millions of people around the world and became one of the most iconic events in history.</span>
+                </div>
+                <div class="main-item">
+                    <span class="title-main">Impact and Legacy</span>
+                    <img class="main-img" src="impact-img.jpg">
+                    <span class="text-main">Apollo 11 proved that humans could travel beyond Earth and safely return. It accelerated technological innovation and inspired future space missions.</span>
+                    <span class="text-main">The success of this mission continues to influence modern space exploration and remains a symbol of human ambition and achievement.</span>
+                </div>
+                <img class="main-background" src="main-img-background.jpeg">
+            </div>
+        </main>
+        <footer>
+            <a href="https://olehwebdevelop.github.io/Portfolio/">© 2026 Oleh K.</a>
+            <a href="https://olehwebdevelop.github.io/Portfolio/">Designed & Built by Me</a>
+        </footer>
+        <a class="up" id="up" href="#nav">
+            <img src="up-arrow-icon.png" class="arrow">
+        </a>
+<script src="script.js"></script>
     </body>
 </html>

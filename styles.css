@@ -10,8 +10,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 header {
@@ -190,6 +193,7 @@ header {
     pointer-events: none;
     transition: all 0.3s ease;
     z-index: 16;
+    list-style-type: none;
 }
 
 .time-list.show {
@@ -416,4 +420,233 @@ footer > a {
     height: 100%;
     object-fit: cover;
     opacity: 0.7;
+}
+
+@media (max-width: 1300px) {
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 10px !important;
+        padding: 10px;
+    }
+
+    .logo {
+        order: 1;
+        flex-shrink: 0;
+    }
+
+    .nav-items {
+        order: 2;
+        width: auto;
+        display: flex;
+        gap: 10px;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .center-nav {
+        order: 3;
+        display: flex;
+        justify-content: center;
+        position: static;
+        transform: none;
+        margin: 0 10px;
+        margin-right: 160px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        min-width: 0;
+    }
+
+    .time {
+        order: 4;
+        flex-shrink: 0;
+        margin-left: auto;
+        white-space: nowrap;
+    }
+
+    .search {
+        width: 100%;
+        max-width: 160px;
+        min-width: 80px;
+        height: 36px;
+        font-size: 13px;
+    }
+
+    .search-btn {
+        width: auto;
+        padding: 0 8px;
+        height: 36px;
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+
+    .block {
+        padding-left: 5vh;
+    }
+
+    .header-title,
+    .header-text {
+        width: 400px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    .background-hero {
+        height: 500px;
+        opacity: 0.7;
+    }
+
+    .block2 .header-title,
+    .block2 .header-text {
+        width: 400px;
+        margin-right: 5%;
+    }
+
+    .block2 .block-btn {
+        margin-right: 34%;
+    }
+
+    .main-items {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 40px 0;
+        gap: 20px;
+    }
+
+    .main-item {
+        width: 80%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-item:hover {
+        width: 82%;
+    }
+
+    .title-main {
+        position: absolute;
+        top: 75%;
+        left: 5%;
+        z-index: 3;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .center-nav {
+        display: none;
+    }
+
+    .time {
+        display: none;
+    }
+
+    .nav-bar {
+        justify-content: space-around;
+    }
+
+    .nav-items {
+        margin-left: 0;
+    }
+
+    .nav-item {
+        width: 75px;
+    }
+
+     .block {
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-title,
+    .header-text {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        position: relative;
+        top: auto;
+        transform: none;
+    }
+
+    .header-title {
+        font-size: 26px;
+    }
+
+    .header-text {
+        font-size: 14px;
+    }
+
+    .block-btn {
+        position: relative;
+        top: auto;
+        transform: none;
+    }
+
+    .block1 .block-btn {
+       margin: 20px auto 0 auto; 
+    }
+
+    .background-hero {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.35;
+    }
+
+    .block2 .header-title,
+    .block2 .header-text {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .block2 .block-btn {
+        margin: 20px auto 0 auto;
+    }
+
+    .block1 .header-title, .block2 .header-title {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .main-items {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .main-item {
+        width: 95%;
+        height: auto;
+    }
+
+    .main-item:hover {
+        width: 95%;
+    }
+
+    .main-img {
+        height: 180px;
+    }
+
+    .title-main {
+        position: absolute;
+        top: 40%;
+        left: 10px;
+        font-size: 16px;
+    }
+
+    .up {
+        width: 45px;
+        height: 45px;
+        bottom: 4%;
+        right: 4%;
+    }
+
 }

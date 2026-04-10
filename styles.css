@@ -71,13 +71,17 @@ header {
     overflow-y: hidden;
 }
 
+.block1 {
+    overflow-y: hidden;
+}
+
 .background-hero {
     height: 720px;
     z-index: 1;
     display: block;
     position: absolute;
     right: 0;
-    top: 9vh;
+    top: 0;
 }
 
 .header-title, .header-text {
